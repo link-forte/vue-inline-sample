@@ -11,7 +11,12 @@
         <div id="app">
             <main>
                 <section>
-                    <div>{{ title }}</div>
+                    <div class="title-header">{{ title }}</div>
+                    <div>count:{{ count }}</div>
+                    <button class="btn" @click="up">UP</button>
+                    <button class="btn" @click="down">DOWN</button>
+                    <div>{{ checkCount }}</div>
+                    <div v-if="goal_flag">GOAL</div>
                 </section>
             </main>
         </div>
